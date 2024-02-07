@@ -2952,117 +2952,83 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _s = $RefreshSig$();
 //First create the React Element
-const parentDiv = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "parent"
-}, [
-    /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-        id: "child"
-    }, [
-        /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {}, "Hello Im H1 Tag"),
-        /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {}, "Hello Im H2 Tag")
-    ]),
-    /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-        id: "child2"
-    }, [
-        /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {}, "Hello Im H1 Tag"),
-        /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {}, "Hello Im H2 Tag")
-    ])
-]);
-console.log(parentDiv);
-//JSX
-const title = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-    id: "parent",
-    children: [
-        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            id: "child",
+//Props Drilling
+// const A = ({name}) => {
+//     return <B name={name} />;
+// }
+// const B = ({name}) => {
+//     return <C name={name} />;
+// }
+// const C = ({name}) => {
+//     return <D name={name} />;
+// }
+// const D = ({name}) => {
+//     return (<div>{name}</div>);
+// }
+const Counter = ()=>{
+    _s();
+    //State
+    let [value, setValue] = (0, _react.useState)(0);
+    let [name, setName] = (0, _react.useState)("rahul");
+    //For empty array: Render only once  
+    //I f we pass dependency variable then effect will happen on every variable changes
+    //     useEffect(() => {
+    // alert("render");
+    //     },[])
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Hello I'm H1 Tag"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>setValue((prev)=>prev + 1),
+                    style: value >= 10 ? {
+                        color: "green"
+                    } : {
+                        color: ""
+                    },
+                    children: "Increament"
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 27,
-                    columnNumber: 9
+                    lineNumber: 31,
+                    columnNumber: 13
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "Hello I'm H2 Tag"
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 28,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "App.js",
-            lineNumber: 26,
-            columnNumber: 5
-        }, undefined),
-        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            id: "child2",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Hello I'm H1 Tag"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: value
                 }, void 0, false, {
                     fileName: "App.js",
                     lineNumber: 32,
-                    columnNumber: 9
+                    columnNumber: 13
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "Hello I'm H2 Tag"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>setValue((prev)=>prev - 1),
+                    disabled: value <= 0 ? true : false,
+                    children: "Decrement"
                 }, void 0, false, {
                     fileName: "App.js",
                     lineNumber: 33,
-                    columnNumber: 9
+                    columnNumber: 13
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "App.js",
-            lineNumber: 31,
-            columnNumber: 5
+            lineNumber: 30,
+            columnNumber: 9
         }, undefined)
-    ]
-}, void 0, true, {
-    fileName: "App.js",
-    lineNumber: 25,
-    columnNumber: 5
-}, undefined);
-console.log(title);
-//Component
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
-                name: "Body",
-                age: 23
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 42,
-                columnNumber: 1
-            }, undefined),
-            "Hello I'm Body"
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 41,
-        columnNumber: 13
-    }, undefined);
+    }, void 0, false);
 };
-_c = Body;
-const Title = ({ name, age })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            "Hello I'm Title coming from ",
-            name,
-            " ",
-            age
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 48,
-        columnNumber: 12
-    }, undefined);
+_s(Counter, "N+cYJloyoAhT0t4JDK6+vprN89Y=");
+_c = Counter;
+const App = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Counter, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 44,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
 };
-_c1 = Title;
+_c1 = App;
 //We will create React Dom Node
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 //React Hooks
@@ -3073,22 +3039,19 @@ const root = (0, _clientDefault.default).createRoot(document.getElementById("roo
 //b-c,
 //c-D
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
-    children: [
-        title,
-        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 63,
-            columnNumber: 5
-        }, undefined)
-    ]
-}, void 0, true, {
+    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 63,
+        columnNumber: 4
+    }, undefined)
+}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 61,
+    lineNumber: 62,
     columnNumber: 1
 }, undefined));
 var _c, _c1;
-$RefreshReg$(_c, "Body");
-$RefreshReg$(_c1, "Title");
+$RefreshReg$(_c, "Counter");
+$RefreshReg$(_c1, "App");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {

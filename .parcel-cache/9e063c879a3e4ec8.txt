@@ -21,7 +21,7 @@
 120D:\Client's Projects\React-with-rahul\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\pseudo\dir.js133511853369534933 0
 87D:\Client's Projects\React-with-rahul\node_modules\utility-types\dist\mapped-types.d.ts133511853366979128 0
 77D:\Client's Projects\React-with-rahul\node_modules\svgo\plugins\cleanupIds.js133511853369336647 0
-44D:\Client's Projects\React-with-rahul\App.js133514511110513197 0
+44D:\Client's Projects\React-with-rahul\App.js133517927903998522 0
 69D:\Client's Projects\React-with-rahul\node_modules\domutils\readme.md133511853366748932 0
 75D:\Client's Projects\React-with-rahul\node_modules\js-yaml\dist\js-yaml.mjs133511853368973518 0
 104D:\Client's Projects\React-with-rahul\node_modules\csso\node_modules\css-tree\lib\syntax\node\AnPlusB.js133511853372788702 0
@@ -36,7 +36,7 @@
 48D:\Client's Projects\React-with-rahul\.gitignore133512372790548418 0
 97D:\Client's Projects\React-with-rahul\node_modules\@swc\helpers\_\_wrap_native_super\package.json133511853375790857 0
 87D:\Client's Projects\React-with-rahul\node_modules\@parcel\source-map\dist\node.js.flow133511853360878847 0
-42D:\Client's Projects\React-with-rahul\dist133514511045648458 1
+42D:\Client's Projects\React-with-rahul\dist133517927906312415 1
 59D:\Client's Projects\React-with-rahul\node_modules\escalade133511853364264365 1
 97D:\Client's Projects\React-with-rahul\node_modules\caniuse-lite\data\features\css-touch-action.js133511853374858345 0
 58D:\Client's Projects\React-with-rahul\node_modules\is-json133511853363620959 1
@@ -1253,7 +1253,7 @@
 80D:\Client's Projects\React-with-rahul\node_modules\css-tree\cjs\syntax\index.cjs133511853370712462 0
 102D:\Client's Projects\React-with-rahul\node_modules\caniuse-lite\data\features\getboundingclientrect.js133511853376524995 0
 116D:\Client's Projects\React-with-rahul\node_modules\csso\node_modules\css-tree\lib\syntax\node\PseudoClassSelector.js133511853374513043 0
-64D:\Client's Projects\React-with-rahul\dist\index.7826abd7.js.map133514511045638476 0
+64D:\Client's Projects\React-with-rahul\dist\index.7826abd7.js.map133517927906297379 0
 63D:\Client's Projects\React-with-rahul\node_modules\mdn-data\api133511853366009262 1
 101D:\Client's Projects\React-with-rahul\node_modules\@parcel\reporter-dev-server\src\templates\404.html133511853362155697 0
 105D:\Client's Projects\React-with-rahul\node_modules\@parcel\workers\test\integration\workerfarm\console.js133511853365372700 0
@@ -2465,7 +2465,7 @@
 69D:\Client's Projects\React-with-rahul\node_modules\is-json\.npmignore133511853361166982 0
 116D:\Client's Projects\React-with-rahul\node_modules\csso\node_modules\css-tree\lib\tokenizer\char-code-definitions.js133511853372980825 0
 67D:\Client's Projects\React-with-rahul\node_modules\is-json\index.js133511853362881100 0
-60D:\Client's Projects\React-with-rahul\dist\index.7826abd7.js133514511045576081 0
+60D:\Client's Projects\React-with-rahul\dist\index.7826abd7.js133517927906036511 0
 100D:\Client's Projects\React-with-rahul\node_modules\caniuse-lite\data\features\input-email-tel-url.js133511853377254034 0
 66D:\Client's Projects\React-with-rahul\node_modules\is-json\LICENSE133511853362354805 0
 71D:\Client's Projects\React-with-rahul\node_modules\is-json\package.json133511853360624128 0
@@ -6027,4 +6027,4 @@
 66D:\Client's Projects\React-with-rahul\node_modules\.bin\semver.ps1133511853383029519 0
 64D:\Client's Projects\React-with-rahul\node_modules\.bin\svgo.cmd133511853383029519 0
 78D:\Client's Projects\React-with-rahul\node_modules\.bin\update-browserslist-db133511853383029519 0
-53D:\Client's Projects\React-with-rahul\dist\index.html133514508839842048 0
+53D:\Client's Projects\React-with-rahul\dist\index.html133517927798270137 0
